@@ -1,2 +1,4 @@
 config.py
 /py3env
+/__pycache__/
+/utils/__pycache/
