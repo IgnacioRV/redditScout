@@ -1,7 +1,7 @@
 import praw
 import re
 from config import config
-
+from utils.telegram_utils import send_message
 
 client_id = config["CLIENT_ID"]
 client_secret = config["CLIENT_SECRET"]
@@ -27,11 +27,13 @@ def send_alert(string):
 
 
 def check_matches(string, regexs):
-	string_list=string.split("\n")
-	for line in string_list:
-		for regexp in regexs:
-			if regexp.search(string):
-				send_alert(string)
+	alert = False
+	for regexp in regexs:
+		if regexp.search(string):
+			alert = True
+	if alert:
+		send_alert(string)
+		send_message(string)
 
 def scan(subreddit):
 	regexs = create_regexs()
