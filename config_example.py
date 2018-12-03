@@ -1,12 +1,12 @@
 config = {
-	"CLIENT_ID": "O_rybhKZaKDgnA",
-	"CLIENT_SECRET": "znt4u2bFaKmlVKdoFDx9wUr3SRk",
-	"USERNAME": "nrv96",
-	"PASSWORD": "1996Nacho",
+	"CLIENT_ID": " ",
+	"CLIENT_SECRET": " ",
+	"USERNAME": " ",
+	"PASSWORD": " ",
 	"PATTERNS": [
 		".*?-.*?-.*-.*",
 		"[0-9][0-9]",
 	],
-	"BOT_TOKEN": "",
-	"CHAT_ID": ""
+	"BOT_TOKEN": " ",
+	"CHAT_ID": " "
 }
